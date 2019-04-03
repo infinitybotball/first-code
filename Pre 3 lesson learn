@@ -1,0 +1,17 @@
+#include <kipr/botball.h>
+int main() { 
+    while (analog(0) >= 0)
+    { 
+        if (analog(0) > 1600) 
+        { 
+            motor(0, 100); 
+            motor(1, 100); 
+        } 
+else { 
+    motor(0, -100); 
+    motor(1, -100); 
+} 
+}
+ao();
+return 0; 
+}
